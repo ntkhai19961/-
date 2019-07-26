@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:background="@color/colorPrimaryDarkBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardBackgroundColor="@color/colorSeaBlueDark"
+        app:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/txtLessonGrammar_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontSize_22"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewA"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/colorPrimaryBackground"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontSize_28"
+                android:text="A"
+                android:textColor="@color/colorWhite"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorLightBrown"/>
+
+            <TextView
+                android:id="@+id/txtAnswerA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="@dimen/fontSize_20"
+                android:text=""
+                android:textColor="@color/colorWhite"/>
+
+            <com.hanks.library.AnimateCheckBox
+                android:id="@+id/chkbAnswerA"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                app:animDuration="200"
+                app:checkedColor="@color/colorPrimary"
+                app:lineColor="#fff"
+                app:lineWidth="1.2dp"
+                app:unCheckColor="@color/colorPrimaryDarkBackground"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewB"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/colorPrimaryBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontSize_28"
+                android:text="B"
+                android:textColor="@color/colorWhite"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorLightBrown"/>
+
+            <TextView
+                android:id="@+id/txtAnswerB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="@dimen/fontSize_20"
+                android:text=""
+                android:textColor="@color/colorWhite"/>
+
+            <com.hanks.library.AnimateCheckBox
+                android:id="@+id/chkbAnswerB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                app:animDuration="200"
+                app:checkedColor="@color/colorPrimary"
+                app:lineColor="#fff"
+                app:lineWidth="1.2dp"
+                app:unCheckColor="@color/colorPrimaryDarkBackground"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewC"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/colorPrimaryBackground"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontSize_28"
+                android:text="C"
+                android:textColor="@color/colorWhite"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorLightBrown"/>
+
+            <TextView
+                android:id="@+id/txtAnswerC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="@dimen/fontSize_20"
+                android:text=""
+                android:textColor="@color/colorWhite"/>
+
+            <com.hanks.library.AnimateCheckBox
+                android:id="@+id/chkbAnswerC"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                app:animDuration="200"
+                app:checkedColor="@color/colorPrimary"
+                app:lineColor="#fff"
+                app:lineWidth="1.2dp"
+                app:unCheckColor="@color/colorPrimaryDarkBackground"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewD"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/colorPrimaryBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontSize_28"
+                android:text="D"
+                android:textColor="@color/colorWhite"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorLightBrown"/>
+
+            <TextView
+                android:id="@+id/txtAnswerD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="@dimen/fontSize_20"
+                android:text=""
+                android:textColor="@color/colorWhite"/>
+
+            <com.hanks.library.AnimateCheckBox
+                android:id="@+id/chkbAnswerD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                app:animDuration="200"
+                app:checkedColor="@color/colorPrimary"
+                app:lineColor="#fff"
+                app:lineWidth="1.2dp"
+                app:unCheckColor="@color/colorPrimaryDarkBackground"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

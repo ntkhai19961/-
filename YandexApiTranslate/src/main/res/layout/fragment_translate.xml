@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.ng.yandextranslate.ui.view.LanguageSelectView
+        android:id="@+id/translate_language_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/translate_edit_text_in"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/translate_language_select"
+        android:background="@drawable/edit_text_background"
+        android:gravity="top|left"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:hint="@string/enter_word"
+        android:padding="5dp" />
+
+    <ImageButton
+        android:id="@+id/translate_button_add_to_favor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_to_favor"
+        android:background="@color/colorWhite"
+        android:layout_margin="8dp"
+        android:layout_alignEnd="@id/translate_edit_text_in"
+        android:layout_alignBottom="@+id/translate_edit_text_in"
+        />
+
+    <ImageButton
+        android:id="@+id/translate_button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear"
+        android:background="@color/colorWhite"
+        android:layout_margin="8dp"
+        android:layout_alignStart="@id/translate_edit_text_in"
+        android:layout_alignBottom="@id/translate_edit_text_in"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/translate_edit_text_in">
+
+        <TextView
+            android:id="@+id/translate_text_view_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+        
+        <ProgressBar
+            android:id="@+id/translate_progress_for_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/license" />
+</RelativeLayout>

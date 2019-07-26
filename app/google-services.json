@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "490447685819",
+    "firebase_url": "https://learningjapaneseapplication.firebaseio.com",
+    "project_id": "learningjapaneseapplication",
+    "storage_bucket": "learningjapaneseapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490447685819:android:0e2d98f3b145a3d9",
+        "android_client_info": {
+          "package_name": "com.example.win7.apphoctiengnhat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490447685819-floit533h2ltratle51nbmh1liit00vk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.win7.apphoctiengnhat",
+            "certificate_hash": "da43d7aabc24d85a9dbf7cf09b6a63132912438a"
+          }
+        },
+        {
+          "client_id": "490447685819-1818mgll7ah6asm3don735g4b796s7kd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNXQQPwiR2atkE6tsVOsEPd1_1v9b758o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490447685819-1818mgll7ah6asm3don735g4b796s7kd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

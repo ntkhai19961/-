@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">YandexTranslate</string>
+
+    <string name="license">Translated by the service "Yandex.Translator" \ http://translate.yandex.ru/</string>
+    <string name="open_drawer">Menu</string>
+    <string name="close_drawer">Whats up?</string>
+    <string name="enter_word">Enter text to translate ...</string>
+    <string name="no_data_available">The story is empty</string>
+    <string name="add_to_favor">Translation added to favorites</string>
+    
+    <string name="simple_string"></string>
+
+    <string-array name="drawer_items">
+        <item>Transfer</item>
+        <item>History</item>
+        <item>My Favorites</item>
+        <item>About the application</item>
+    </string-array>
+
+    <string name="about_info">The application for the school Yandex Mobilization. \ NAs always, all on the last day (╯°□°）╯︵ ┻━┻"</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/colorPrimaryDarkBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <qdx.bezierviewpager_compile.vPage.BezierViewPager
+            android:id="@+id/bezierViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <qdx.bezierviewpager_compile.BezierRoundView
+            android:id="@+id/bezierRoundView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:color_bez="@color/colorPrimary"
+            app:color_touch="@color/colorPrimary"
+            app:time_animator="1"
+            app:round_count="3"
+            app:radius="8dp"/>
+
+    </RelativeLayout>
+
+    <com.example.win7.apphoctiengnhat.CustomViewPager.CustomViewPager
+        android:id="@+id/viewPagerGrammar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/colorPrimaryDarkBackground"/>
+
+</LinearLayout>

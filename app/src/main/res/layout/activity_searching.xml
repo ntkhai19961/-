@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDarkBackground"
+    tools:context="com.example.win7.apphoctiengnhat.App.Fragment.Communication.Searching.Searching">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/layout_toolbar"
+            layout="@layout/custom_toolbar_color_primary"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:searchBackground="@color/colorWhite"
+            app:searchSuggestionBackground="@color/colorPrimaryDark"
+            app:searchCloseIcon="@drawable/ic_clear_black_24dp"
+            app:searchBackIcon="@drawable/ic_arrow_back_black_24dp"
+            app:searchSuggestionIcon="@drawable/ic_suggestion"
+            android:hint="Searching..."
+            android:textColor="@color/colorDark"
+            android:textColorHint="@color/colorDark">
+
+        </com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTimKiem_Notification"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcvCommunicationSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rltItemCommunication"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/border_item_rcv_communication">
+
+    <LinearLayout
+        android:id="@+id/lltItemCommunication"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_weight="10"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtYNghiaChucNangFragment_CoBan"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:textColor="@color/colorWhite"/>
+
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/sbtnLike"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:src="@android:color/darker_gray"
+            app:btn_color="@color/colorPrimaryDarkBackground"
+            app:btn_fill_color="@color/colorPrimary"
+            app:allow_random_color="false"
+            app:enable_flashing="false"
+            app:big_shine_color="@color/background_lesson_details_hoi_thoai"
+            app:click_animation_duration="200"
+            app:shine_animation_duration="1500"
+            app:shine_turn_angle="10"
+            app:small_shine_offset_angle="20"
+            app:shine_distance_multiple="1.5"
+            app:small_shine_color="@color/colorLightRed"
+            app:shine_count="8"
+            app:siShape="@raw/star"/>
+
+    </LinearLayout>
+
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/expandableCommunication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lltItemCommunication"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/border_item_expandable_communication"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="linear">
+
+        <TextView
+            android:id="@+id/txtTiengNhat"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="@dimen/fontSize_21" />
+
+        <TextView
+            android:id="@+id/txtRomanji"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="@dimen/fontSize_21" />
+
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+</RelativeLayout>

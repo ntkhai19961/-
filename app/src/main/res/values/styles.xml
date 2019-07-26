@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary1</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark1</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="YandexApiTranslateTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NutBack_Color_Black" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- ================Bounce Dialog==========================-->
+    <style name="BounceDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_anim_show</item>
+        <item name="android:windowExitAnimation">@anim/dialog_anim_dismiss</item>
+    </style>
+
+    <!-- ================Fade/Scale out in Dialog===============-->
+    <style name="FadeScaleOutIn" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_anim_scale_out_fade_out</item>
+        <item name="android:windowExitAnimation">@anim/dialog_anim_scale_in_fade_in</item>
+    </style>
+
+</resources>

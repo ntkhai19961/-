@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.win7.apphoctiengnhat">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+     Phải có android:name = ".NhanDienChuCai.TessDataManager"
+    DO THỪA KẾ CLASS " APPLICATION "
+    thì khi chạy vào initAPI , dataPath mới khác NULL
+    -->
+    <!-- dataPath này trong OcrManager -->
+    <!-- Nghĩa là không có dòng này thì không chạy vào hàm "getTessDataParentDirectory()" -->
+    <!-- Không chạy hàm đó thì instance trong TessDataManager sẽ là NULL -->
+    <!-- Crash APP nếu là NULL -->
+    <!--
+android:name là ".Translate.App"
+    LÀ VÌ CLASS " APP " TRONG TRANSLATE ĐÃ THỪA KẾ LẠI TESSDATAMANAGER RỒI
+    MÀ TESSDATAMANAGER THÌ THỪA KẾ " APPLICATION "
+    => CHỈ CẦN GỌI ".Translate.App" là đủ
+    https://stackoverflow.com/questions/32395482/how-to-add-two-androidname-attributes-to-application-tag-in-manifest-file
+    -->
+    <application
+        android:name=".Translate.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_kanji"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".App.Activity.Main.MainActivity" />
+        <activity android:name=".App.Fragment.Communication.CacChucNang.Hiragana.Hiragana" />
+        <activity android:name=".App.Fragment.Communication.CacChucNang.Katakana.Katakana" />
+        <activity android:name=".App.Fragment.Communication.ChucNangKiemTra.KiemTra" />
+        <activity android:name=".KanjiVG_Drawing.KanjiVG_Drawing" />
+        <activity
+            android:name=".Translate.ui.activity.MainActivity_Translate"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/YandexApiTranslateTheme" />
+        <activity android:name=".KanjiPaint.KanjiPaint" />
+
+        <receiver android:name=".Widget.AppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_info" />
+        </receiver>
+
+        <activity android:name=".Widget.ActiveWidget.ActiveWidget" />
+
+        <service
+            android:name=".Widget.ActiveWidget.MyService"
+            android:enabled="true"
+            android:stopWithTask="false" />
+
+        <activity android:name=".KanjiDetails.KanjiDetails" />
+        <activity android:name=".App.Fragment.Communication.CacChucNang.CacChucNangKhac.ChucNang" />
+        <activity android:name=".App.Fragment.Communication.Like.LikeActivity" />
+        <activity android:name=".App.Fragment.Communication.Searching.Searching" />
+        <activity android:name=".Lesson.LessonActivity" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".Login.SignIn.SignInActivity" />
+        <activity android:name=".Login.SignUp.SignUpActivity" />
+        <activity android:name=".LessonDetails.Activity.LessonDetailsActivity" />
+        <activity android:name=".VocabularyDetails.VocabularyDetailsActivity" />
+        <activity android:name=".Lesson.ChildLessonActivity" />
+        <activity android:name=".App.Activity.Kanji.KanjiActivity"
+                  android:theme="@style/AppThemeDark" />
+    </application>
+
+</manifest>

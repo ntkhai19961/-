@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDarkBackground"
+    tools:context="com.example.win7.apphoctiengnhat.App.Fragment.Communication.CacChucNang.CacChucNangKhac.ChucNang">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/custom_toolbar_color_primary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcvCommunication"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" />
+
+        <com.example.win7.apphoctiengnhat.CustomView.CustomRoundedButton
+            android:id="@+id/btnKiemTraChucNangFragment_CoBan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:text="Kiểm tra"
+            app:textSize="24sp"
+            app:textColor="@color/colorWhite"
+            app:buttonColor="@color/colorPrimaryDark"
+            app:duration="10" />
+
+    </LinearLayout>
+
+</LinearLayout>

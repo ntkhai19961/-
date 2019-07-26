@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard_black_48dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_camera_nhan_dien_chu_cai"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Text Recognition" />
+        <item
+            android:id="@+id/nav_translate"
+            android:icon="@drawable/ic_translate"
+            android:title="Online Dictionary" />
+        <item
+            android:id="@+id/nav_kanji"
+            android:icon="@drawable/ic_kanji_black_48dp"
+            android:title="Kanji" />
+        <item
+            android:id="@+id/nav_vocabulary"
+            android:icon="@drawable/ic_vocabulary_black_48dp"
+            android:title="Vocabulary" />
+    </group>
+
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:icon="@drawable/ic_menu_share"
+                android:title="My Account" />
+            <item
+                android:id="@+id/nav_main_activity_log_out"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Sign out" />
+        </menu>
+    </item>
+
+</menu>

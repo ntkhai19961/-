@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.win7.apphoctiengnhat.Widget.ActiveWidget.ActiveWidget">
+
+    <Button
+        android:id="@+id/btnActiveWidget"
+        android:layout_width="wrap_content"
+        android:text="Active"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnStopWidget"
+        android:layout_width="wrap_content"
+        android:text="Stop"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

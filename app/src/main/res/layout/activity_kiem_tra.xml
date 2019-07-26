@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDarkBackground"
+    tools:context="com.example.win7.apphoctiengnhat.App.Fragment.Communication.ChucNangKiemTra.KiemTra">
+
+    <include
+        android:id="@+id/toolbarMiniTest"
+        layout="@layout/custom_toolbar_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_below="@+id/toolbarMiniTest"
+        android:progressTint="@color/colorPrimaryDark"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:text="Choose the right answer"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnKiemTraNghe"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_volume_down_white_24dp" />
+
+            <TextView
+                android:id="@+id/txtCauHoi"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:text="Câu hỏi"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupKiemTra"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdBtnCauA"
+                android:text="Câu A"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rdBtnCauB"
+                android:text="Câu B"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rdBtnCauC"
+                android:text="Câu C"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rdBtnCauD"
+                android:text="Câu D"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.example.win7.apphoctiengnhat.CustomView.CustomRoundedButton
+        android:id="@+id/btnKiemTraKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"
+        app:text="Kiểm tra"
+        app:textSize="24sp"
+        app:textColor="@color/colorWhite"
+        app:buttonColor="@color/colorPrimaryDark"
+        app:duration="10" />
+
+</RelativeLayout>

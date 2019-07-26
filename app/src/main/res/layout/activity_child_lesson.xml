@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDarkBackground"
+    tools:context="com.example.win7.apphoctiengnhat.Lesson.ChildLessonActivity">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/custom_toolbar_color_primary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewChildLesson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_toolbar"/>
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:id="@+id/shimmerLayoutChildLesson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarThumbVertical="@color/colorPrimaryDarkBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="12dp"
+                    android:layout_margin="12dp"
+                    android:background="@color/colorWhite">
+
+                    <View
+                        android:background="@color/dark_transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@color/dark_transparent"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/dark_transparent"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="12dp"
+                    android:layout_margin="12dp"
+                    android:background="@color/colorWhite">
+
+                    <View
+                        android:background="@color/dark_transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@color/dark_transparent"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/dark_transparent"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="12dp"
+                    android:layout_margin="12dp"
+                    android:background="@color/colorWhite">
+
+                    <View
+                        android:background="@color/dark_transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@color/dark_transparent"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/dark_transparent"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="12dp"
+                    android:layout_margin="12dp"
+                    android:background="@color/colorWhite">
+
+                    <View
+                        android:background="@color/dark_transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@color/dark_transparent"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/dark_transparent"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+</RelativeLayout>

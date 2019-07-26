@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDarkBackground"
+    tools:context=".App.Fragment.Recognition.TextRecognition.NhanDienChuCai">
+
+    <ScrollView
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtYourImageTextRecognition"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/border_underline_text"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:text="Your Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/isThereAnyPicture_FragmentTextRecognition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Take or choose a picture"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="italic"/>
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgHinhAnhChupQuaCAMERA" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtResultTextRecognition"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/border_underline_text"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="15dp"
+                android:text="Result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                app:cardElevation="4dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@color/colorPrimaryBackground">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:text="Text"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="normal"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:id="@+id/txtChuCaiNhanDienQuaCAMERA"
+                        android:textSize="30sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:text="English"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="normal"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtEnglish_FragmentTextRecognition"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:textSize="30sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=""/>
+
+                        <com.wang.avi.AVLoadingIndicatorView
+                            android:id="@+id/AVLoadingIndicatorView_English_FragmentTextRecognition"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:indicatorName="BallPulseIndicator"
+                            style="@style/AVLoadingIndicatorView.Large"
+                            android:visibility="invisible"
+                            app:indicatorColor="@color/colorWhite" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:text="Meaning"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="normal"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtMeaning_FragmentTextRecognition"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:textSize="30sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text=""/>
+
+                        <com.wang.avi.AVLoadingIndicatorView
+                            android:id="@+id/AVLoadingIndicatorView_Translate_FragmentTextRecognition"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:indicatorName="BallPulseIndicator"
+                            style="@style/AVLoadingIndicatorView.Large"
+                            android:visibility="invisible"
+                            app:indicatorColor="@color/colorWhite" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <io.github.yavski.fabspeeddial.FabSpeedDial
+        android:id="@+id/fabSpeedButton_Text_Recognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fabBackgroundTint="@color/colorPrimary"
+        app:fabGravity="bottom_end"
+        app:fabMenu="@menu/menu_fab_speed_button_text_recognition"
+        app:miniFabBackgroundTintList="@array/fab_menu_item_colors"
+        app:miniFabDrawableTint="@android:color/white"
+        app:miniFabTitleTextColorList="@array/fab_menu_item_colors"
+        />
+
+</RelativeLayout>

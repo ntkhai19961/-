@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rltVocabularyTest"
+    android:background="@color/colorPrimaryDarkBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="3">
+
+            <ImageButton
+                android:id="@+id/imgBtnTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_info_white_36dp"
+                android:background="@drawable/border_ic_image_view_primary"/>
+
+            <ImageButton
+                android:id="@+id/imgBtnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:background="@drawable/border_ic_image_view_primary"
+                android:src="@drawable/ic_refresh_white_36dp"/>
+
+            <ImageButton
+                android:id="@+id/imgBtnNextQuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:background="@drawable/border_ic_image_view_primary"
+                android:src="@drawable/ic_next_white_36dp"/>
+
+            <ImageButton
+                android:id="@+id/imgBtnPrevQuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="4dp"
+                android:background="@drawable/border_ic_image_view_primary"
+                android:src="@drawable/ic_back_white_36dp"/>
+
+            <ImageView
+                android:id="@+id/imgVocabularyQuest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:layout_centerInParent="true" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_VocabularyTest"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lltAnswerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:weightSum="3"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/lltBtnContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

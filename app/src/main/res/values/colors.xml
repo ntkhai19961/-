@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--=============================================-->
+    <color name="colorPrimary">#ff6d69</color>
+    <color name="colorPrimaryDark">#e55c59</color>
+    <color name="colorPrimary1">#31314d</color>
+    <color name="colorPrimaryDark1">#1c1c2d</color>
+    <color name="colorPrimaryDarkBackground">#2c344b</color>
+    <color name="colorPrimaryBackground">#434a65</color>
+    <color name="colorPrimaryBackgroundOnTouch">#353c54</color>
+    <color name="colorPrimaryDarkOnTouch">#d14b48</color>
+    <color name="colorPrimaryText">#a1a4ae</color>
+    <color name="colorLightBrown">#938A89</color>
+    <color name="colorSeaBlue">#4acadd</color>
+    <color name="colorSeaBlueDark">#539db2</color>
+    <!--=============================================-->
+
+    <color name="colorSkeleton">#a2878787</color>
+    <color name="colorGreenOnline">#5ebc51</color>
+    <color name="colorAccent">#ff352e</color>
+    <color name="colorBackground">#cfcfcf</color>
+    <color name="colorGray">#CCC</color>
+    <color name="colorDarkGray">#cccccc</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorOrange">#e75748</color>
+    <color name="colorLightBlue">#efefff</color>
+    <color name="colorRed">#ff352f</color>
+    <color name="colorLightRed">#FF6666</color>
+    <color name="colorYellow">#e3fa11</color>
+    <color name="colorRowAakiraExpandable">#B0191919</color>
+    <color name="colorDark">#273833</color>
+    <color name="black">#000</color>
+    <color name="text_gray_dark">#CC000000</color>
+    <color name="lightorange">#fdf2df</color>
+    <color name="lightorangedark">#ebd6ab</color>
+
+    <!-- =========== Lesson Activity Filter =======================-->
+    <color name="filters_chips">#b3e5fc</color>
+    <color name="filtersfab">#3f51b5</color>
+    <color name="filters_header">#303f9f</color>
+    <color name="filters_buttons">#ff4081</color>
+    <color name="filters_buttons_selected">#c2185b</color>
+    <color name="filters_tab_text_color">#f5f5f5</color>
+    <!-- ==========================================================-->
+
+    <color name="text_gray">#656565</color>
+    <color name="simple_item_background_pressed">#15000000</color>
+    <color name="apptheme_accent">#eeff41</color>
+    <color name="apptheme_accent_translucent">#70eeff41</color>
+    <color name="apptheme_main">#e91e63</color>
+    <color name="apptheme_actionbar">@color/apptheme_main</color>
+    <color name="radical_combination_kanji_details_more">#0063ba</color>
+    <color name="kanji_text_kanji_details_more">#d90085</color>
+    <color name="card_view_background">#ea0071</color>
+    <color name="btnSignUp">#39796b</color>
+    <color name="btnSignActive">#A9d440</color>
+    <color name="background_lesson_details_hoi_thoai">#00bfff</color>
+    <color name="KazunaAiChat_send">#F0C22F</color>
+    <color name="KazunaAiChat_not_send">#7ABB93</color>
+</resources>

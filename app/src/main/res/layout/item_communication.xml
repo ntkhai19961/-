@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lltItemFragmentCommunication"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewItemCommunication"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardBackgroundColor="@color/colorPrimaryBackground"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="12dp"
+                android:id="@+id/imageCardViewFragment_CoBan"
+                android:src="@drawable/hiragana"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border_image_view_white"/>
+
+            <TextView
+                android:id="@+id/txtCardViewFragment_CoBan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

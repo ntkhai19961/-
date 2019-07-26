@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:text="Are you sure??"
+            android:textSize="@dimen/fontSize_20"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrange"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="@dimen/fontSize_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textAlignment="center"
+            android:text="We will go to Grammar Quest. Are you sure with these Vocabulary quest??"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGoToGrammarTestCancle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/Cancle"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontSize_20"
+                android:background="@color/colorOrange"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/text_gray"/>
+
+            <Button
+                android:id="@+id/btnGoToGrammarTestOK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/OK"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontSize_20"
+                android:background="@color/colorOrange"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

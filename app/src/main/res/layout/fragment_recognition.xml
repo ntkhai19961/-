@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#00000000">
+
+            <FrameLayout
+                android:id="@+id/wrapper_ntb_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <devlight.io.library.ntb.NavigationTabBar
+                    android:id="@+id/ntb_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    app:ntb_bg_color="@color/colorPrimaryBackground"
+                    app:ntb_title_size="12sp"
+                    app:ntb_badge_bg_color="@color/colorPrimary"
+                    app:ntb_badge_gravity="bottom"
+                    app:ntb_badge_position="left"
+                    app:ntb_badge_title_color="#ffffffff"
+                    app:ntb_badge_use_typeface="true"
+                    app:ntb_badged="true"
+                    app:ntb_title_mode="active"
+                    app:ntb_titled="true"
+                    app:ntb_scaled="false"
+                    app:ntb_typeface="fonts/agency.ttf"/>
+
+            </FrameLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_weight="9"
+            android:id="@+id/vp_horizontal_ntb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

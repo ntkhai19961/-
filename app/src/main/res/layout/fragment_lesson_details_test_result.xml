@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDarkBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewResultLessonTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/colorPrimaryBackground"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="12dp">
+
+                    <FrameLayout
+                        android:id="@+id/fltProgressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_thumb_up_white_50dp"/>
+
+                        <ProgressBar
+                            android:id="@+id/progressBarLessonTestResult"
+                            android:layout_width="155dp"
+                            android:layout_height="155dp"
+                            android:indeterminate="false"
+                            android:progressDrawable="@drawable/circle_shape_progress_bar_lesson_test_result_process_drawable"
+                            android:background="@drawable/circle_shape_progress_bar_lesson_test_result_bg"
+                            style="?android:attr/progressBarStyleHorizontal" />
+
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintLeft_toRightOf="@+id/fltProgressBar"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Right Answer"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/fontSize_20"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/txtNumberOfRightAnswerLessonTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7"
+                                android:textColor="@color/colorSeaBlue"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/fontSize_32"/>
+
+                            <TextView
+                                android:id="@+id/txtTotalAnswerLessonTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:text="/10"
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/fontSize_24"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtPointTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Your Point"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/fontSize_20"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/txtCurrentResultLessonTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="330"
+                                android:textColor="@color/colorSeaBlue"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/fontSize_32"/>
+
+                            <TextView
+                                android:id="@+id/txtTotalResultLessonTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:text="/1000"
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/fontSize_24"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="2018/01/05"
+                android:textSize="@dimen/fontSize_16"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimaryBackground"/>
+
+            <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="12dp"
+               android:layout_marginRight="16dp"
+               android:layout_marginLeft="16dp"
+               android:padding="8dp">
+
+               <ImageView
+                   android:id="@+id/ic_bestRecord"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:padding="8dp"
+                   android:src="@drawable/ic_best_record_white_24dp"
+                   android:background="@drawable/border_ic_image_view_primary"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toEndOf="@+id/ic_bestRecord"
+                   android:layout_centerVertical="true"
+                   android:paddingLeft="8dp"
+                   android:paddingRight="8dp"
+                   android:text="Best record"
+                   android:textColor="@color/colorWhite"
+                   android:textSize="@dimen/fontSize_18"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentEnd="true"
+                   android:layout_centerVertical="true"
+                   android:paddingLeft="8dp"
+                   android:paddingRight="8dp"
+                   android:text="+1000 POINT"
+                   android:textAlignment="center"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="@dimen/fontSize_20"/>
+
+           </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="@color/colorLightBrown"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/ic_last_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_current_record_white_24dp"
+                    android:background="@drawable/border_ic_image_view_primary"/>
+
+                <TextView
+                    android:id="@+id/txtLastRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_toEndOf="@+id/ic_last_record"
+                    android:text="Last record"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontSize_18"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="+500 POINT"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fontSize_20"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtTime2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="2018/04/24"
+                android:textSize="@dimen/fontSize_16"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimaryBackground"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/ic_bestRecord2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_best_record_white_24dp"
+                    android:background="@drawable/border_ic_image_view_primary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ic_bestRecord2"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Best record"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontSize_18"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="+800 POINT"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fontSize_20"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="@color/colorLightBrown"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/ic_last_record2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_current_record_white_24dp"
+                    android:background="@drawable/border_ic_image_view_primary"/>
+
+                <TextView
+                    android:id="@+id/txtLastRecord2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_toEndOf="@+id/ic_last_record2"
+                    android:text="Last record"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontSize_18"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="+700 POINT"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fontSize_20"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

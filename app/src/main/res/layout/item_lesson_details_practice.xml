@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDarkBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPracticeID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontSize_24"
+                android:textColor="@color/colorWhite"/>
+
+            <RelativeLayout
+                android:id="@+id/rltPractice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtPracticeID"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/ic_bestRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_best_record_white_24dp"
+                    android:padding="8dp"
+                    android:background="@drawable/border_ic_image_view_primary"/>
+
+                <TextView
+                    android:id="@+id/txtPractice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ic_bestRecord"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="言いましょう"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontSize_24"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewIimashou"
+                app:layout_constraintTop_toBottomOf="@+id/rltPractice"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@color/colorPrimaryBackground"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+                    <TextView
+                        android:id="@+id/txtIimashou"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:text="①.　フォーを　食べます。\n\n②.　ジュースを　飲みます。\n\n③.　ニュースを　見ます。\n\n④.　ロックを　聞きます。\n\n⑤.　テニスを　します。"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/fontSize_20"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:id="@+id/viewLinePractice"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewIimashou"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGray"/>
+
+            <RelativeLayout
+                android:id="@+id/rltPracticeExample"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/viewLinePractice"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/ic_bestRecord1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_best_record_white_24dp"
+                    android:padding="8dp"
+                    android:background="@drawable/border_ic_image_view_primary"/>
+
+                <TextView
+                    android:id="@+id/txtPracticeTileExample"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ic_bestRecord1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="話しましょう"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontSize_24"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                app:layout_constraintTop_toBottomOf="@+id/rltPracticeExample"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@color/colorPrimaryBackground"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+                    <TextView
+                        android:id="@+id/txtPracticeExample"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:text="①.　フォーを　食べます。\n\n②.　ジュースを　飲みます。\n\n③.　ニュースを　見ます。\n\n④.　ロックを　聞きます。\n\n⑤.　テニスを　します。"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/fontSize_20"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

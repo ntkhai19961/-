@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDarkBackground"
+    tools:context="com.example.win7.apphoctiengnhat.KanjiDetails.KanjiDetails">
+
+    <include
+        android:id="@+id/toolBarKanjiDetails"
+        layout="@layout/custom_toolbar_color_primary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <ScrollView
+        android:layout_below="@+id/toolBarKanjiDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtKanjiDetails_Id"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPrimaryBackground"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:text="1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtKanjiDetails_Title"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:text="一"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtKanjiDetails_HanTu"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/colorWhite"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:text="One"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <TextView
+                android:paddingBottom="8dp"
+                android:background="@drawable/border_underline_text"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="16dp"
+                android:text="Meaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimaryBackground"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/txtKanji_ChiTietKanji"
+                        android:layout_width="match_parent"
+                        android:text="Kanji"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:text="Meaning"
+                        android:layout_marginTop="4dp"
+                        android:textStyle="normal"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/txtYNghia_ChiTietKanji"
+                        android:layout_width="match_parent"
+                        android:text="One"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText">
+                    </TextView>
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:text="Level"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="normal"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText">
+                    </TextView>
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/txtCapDo_ChiTietKanji"
+                        android:layout_width="match_parent"
+                        android:text="N5"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText">
+                    </TextView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:paddingBottom="8dp"
+                android:background="@drawable/border_underline_text"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="15dp"
+                android:text="Reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <!---->
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/colorPrimaryBackground">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="On'yomi"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/txtOnYoMi_ChiTietKanji"
+                        android:text="いち"
+                        android:textSize="20sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:text="Kun'yomi"
+                        android:textSize="15sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/txtKunYoMi_ChiTietKanji"
+                        android:text="ひと"
+                        android:textSize="20sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!---->
+
+            <TextView
+                android:paddingBottom="8dp"
+                android:background="@drawable/border_underline_text"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="15dp"
+                android:text="Drawing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <android.support.v7.widget.CardView
+                app:cardBackgroundColor="@color/colorPrimaryBackground"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.badoualy.kanjistroke.KanjiStrokeView
+                        app:svAnimate="true"
+                        app:svStrokeColor="@color/colorWhite"
+                        android:id="@+id/view_stroke"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_centerInParent="true"/>
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/AVLoadingIndicatorView_KanjiDetails"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:indicatorName="LineScaleIndicator"
+                        style="@style/AVLoadingIndicatorView.Large"
+                        android:visibility="invisible"
+                        app:indicatorColor="@color/colorWhite" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonKanjiPaint"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_arrow_forward_white_24dp"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!---->
+
+            <TextView
+                android:paddingBottom="8dp"
+                android:background="@drawable/border_underline_text"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="16dp"
+                android:text="Examples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimaryBackground"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/txtKanjiDetails_Vidu"
+                        android:text="いち"
+                        android:textSize="20sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!---->
+
+            <TextView
+                android:paddingBottom="8dp"
+                android:background="@drawable/border_underline_text"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="15dp"
+                android:text="Visually Similar Kanji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Currently there are no similar looking kanji which exists in the database learning system"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <!---->
+
+            <TextView
+                android:paddingBottom="8dp"
+                android:background="@drawable/border_underline_text"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="15dp"
+                android:text="Found In Vocabulary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/gradient_actionbar"
+        android:layout_below="@+id/toolBarKanjiDetails"/>
+
+</RelativeLayout>

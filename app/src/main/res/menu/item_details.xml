@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/kanji_details_more"
+        android:icon="@drawable/ic_public_grey_24dp"
+        android:title="@string/action_item_kanji_more"
+        app:showAsAction="ifRoom" />
+</menu>

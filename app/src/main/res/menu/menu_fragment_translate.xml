@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_translate_fragment_translate"
+        android:title="Clear"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_favorite_fragment_translate"
+        android:title="Clear"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_history_fragment_translate"
+        android:title="Clear"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_about_fragment_translate"
+        android:title="Clear"
+        app:showAsAction="never" />
+
+</menu>

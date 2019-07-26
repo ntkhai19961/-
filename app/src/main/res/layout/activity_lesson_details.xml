@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win7.apphoctiengnhat.LessonDetails.Activity.LessonDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rltToolbarLessonDetails"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarLessonDetails"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.nightonke.boommenu.BoomMenuButton
+                    android:id="@+id/bmb_lesson_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:bmb_backgroundEffect="false"
+                    app:bmb_boomEnum="boomParabola_2"
+                    app:bmb_piecePlaceEnum="piecePlace_ham_5"
+                    app:bmb_buttonPlaceEnum="buttonPlace_ham_5"
+                    app:bmb_showDuration="2000"
+                    app:bmb_hideDuration="2000"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/txtToolBarLessonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontSize_22"
+            android:maxLines="1"
+            android:layout_centerInParent="true"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content_main_LessonDetails"
+        android:layout_below="@+id/rltToolbarLessonDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

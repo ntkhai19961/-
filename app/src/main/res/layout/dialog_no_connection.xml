@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNoConnectionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:text="@string/NoConnectionTitle"
+            android:textSize="@dimen/fontSize_20"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrange"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="@dimen/fontSize_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textAlignment="center"
+            android:text="@string/NoConnectionMessage"/>
+
+        <Button
+            android:id="@+id/btnNoConnectionOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/OK"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontSize_20"
+            android:background="@color/colorOrange"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

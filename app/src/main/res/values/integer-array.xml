@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="fab_menu_item_colors">
+
+        <!-- A dark Holo shade of red -->
+        <item>@color/colorPrimary</item>
+
+        <!-- A Holo shade of purple -->
+        <item>@android:color/holo_purple</item>
+
+        <item>@color/colorSeaBlue</item>
+
+        <item>@android:color/holo_orange_dark</item>
+
+        <item>@color/colorPrimaryDark</item>
+
+    </integer-array>
+
+</resources>

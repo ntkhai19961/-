@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitleDialogDoneMiniTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="24sp"
+        android:textColor="@color/colorOrange"
+        android:textAlignment="center"
+        android:text="Result"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/lltMiniTestResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitleDialogDoneMiniTest"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Number of correct answer: "
+            android:textColor="@color/text_gray_dark"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtTongDiemDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@color/colorOrange" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/lltMiniTestResult"
+        android:text="Go back"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorOrange"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
